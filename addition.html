@@ -1,0 +1,36 @@
+<html>
+<head>
+<link href="css\sc.css" rel="stylesheet">
+<script>
+function add()
+{
+  var a=parseInt(document.getElementById('1').value);
+  var b=parseInt(document.getElementById('2').value);
+  var t=/[0-9]/;
+  if(!(t.test(a)))
+  {
+	window.alert("plzz enter a number in first number")
+  }
+  if(!(t.test(b)))
+  {
+	window.alert("plzz enter a number in second number")
+  }
+  if((t.test(a))&&(t.test(b)))
+  {
+        document.getElementById('result').innerHTML=a+b;
+  }
+}
+</script>
+</head>
+<body>
+<div class="loginbox">
+<form>
+<img src="images\madhava.jpeg" class="venu"> 
+first number:<br><input type="text" id="1"><br><br>
+second number:<input type="text" id="2"><br><br>
+<input type="button" onClick="add()" value="addition"><br>
+</form>
+the result is  :<span id="result"></span>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<link href="css\sc.css" rel="stylesheet">
+<script>
+function show(){
+
+var i, no, fact;
+fact=1;
+no=Number(document.getElementById("num").value);
+var t=/[0-9]/;
+  if(!(t.test(no)))
+  {
+	window.alert("plzz enter a number in first number")
+  }
+else
+{
+for(i=1; i<=no; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("answer").innerHTML= fact;
+}
+}
+</script>
+</head>
+<body>
+<div class="loginbox">
+<img src="images\madhava.jpeg" class="venu">
+Enter Num:<br> <input type="text"id="num"><br>
+<input type="button"  onclick="show()" value="Factorial">
+<br>
+<p>the result is:<span id="answer"></span>
+</div>
+</body>
+</html>

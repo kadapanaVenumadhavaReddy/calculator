@@ -1,0 +1,30 @@
+<html>
+<head>
+<link href="css\sc.css" rel="stylesheet">
+<script>
+function add()
+{
+  var a=parseInt(document.getElementById('1').value);
+  var t=/[0-9]/;
+  if(!(t.test(a)))
+  {
+	window.alert("plzz enter a number in first number")
+  }
+  if((t.test(a)))
+  {
+        document.getElementById('result').innerHTML=Math.sqrt(a);
+  }
+}
+</script>
+</head>
+<body>
+<div class="loginbox">
+<form>
+<img src="images\madhava.jpeg" class="venu">
+Enter A Number:<input type="text" id="1"><br><br>
+<input type="button" onClick="add()" value="squareroot"><br>
+</form>
+the result is:<span id="result"></span>
+</divss>
+</body>
+</html>
